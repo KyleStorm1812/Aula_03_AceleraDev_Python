@@ -6,7 +6,7 @@ coordinates = [(-14.235004, -51.92528, 16)]
 
 
 @pytest.mark.parametrize("lag, lng, expected", coordinates)
-def test_get_temperature_by_lat_lng(lag,lng,expected):
+def test_get_temperature_by_lat_lng(lag, lng, expected):
 
     temp_json = {"currently": {"temperature": 62}}
     mock_patch = patch("main.requests.get")
