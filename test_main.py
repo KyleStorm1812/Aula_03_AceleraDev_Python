@@ -2,7 +2,7 @@ from main import get_temperature
 import pytest
 from mock import patch
 
-coordinates= [(-14.235004, -51.92528, 16)]
+coordinates = [(-14.235004, -51.92528, 16)]
 
 
 @pytest.mark.parametrize("lag, lng, expected", coordinates)
